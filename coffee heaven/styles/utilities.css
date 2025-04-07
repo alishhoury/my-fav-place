@@ -1,14 +1,14 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    font-family: sans-serif;
-    transition: all 0.3s ease;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
 
-body{
+body {
   background-color: #efebe5;
 }
 html {
-  scroll-behavior:smooth  ;
+  scroll-behavior: smooth;
 }

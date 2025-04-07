@@ -1,91 +1,94 @@
-header{
-    width: 99%;
-    height: 60px;
-    background-color: rgba(230, 213, 184);
-    z-index: -1;
-    position: absolute;
-    border-radius: 8px;
-    top: 5px;
-    left: 0.5%;
-    right: 0.5%;
-    display: flex;
-    align-items: center;
+header {
+  width: 99%;
+  height: 60px;
+  background-color: rgba(230, 213, 184);
+  z-index: -1;
+  position: absolute;
+  border-radius: 8px;
+  top: 5px;
+  left: 0.5%;
+  right: 0.5%;
+  display: flex;
+  align-items: center;
 }
-header img{
-    width: 30px;
-    height: auto;
-    position: absolute;
-    left: 10px;
-    
+header img {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: 10px;
 }
-header h1{
-    font-size: 30px;
-    font-family: "catchy mager";
-    margin-left: 45px;
-    color: #080808;
+header h1 {
+  font-size: 30px;
+  font-family: "catchy mager";
+  margin-left: 45px;
+  color: #080808;
 }
-header button{
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 30%;
+header button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 30%;
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 header button:hover {
-    background-color: #e0ad6e;
-    color: white;
-    transform: translateX(-5px) translateY(-50%);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e0ad6e;
+  color: white;
+  transform: translateX(-5px) translateY(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-body h2{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 90px;
-    font-size: 40px;
+body h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90px;
+  font-size: 40px;
 }
-.cards-container img{
-    width: 100%;
-    height: 350px;
-    border-radius: 8px;
+.cards-container img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
 }
-.cards-container{
-    display: flex;
-    justify-content: center;
-    flex: wrap;
-    gap: 60px;
-    margin-top: 180px;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex: wrap;
+  gap: 60px;
+  margin-top: 180px;
 }
-.card1, .card2, .card3 {
-    width: 300px;
-    min-width: 250px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    background-color: #f0f0f0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+.card1,
+.card2,
+.card3 {
+  width: 300px;
+  min-width: 250px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-.card1:hover,.card2:hover, .card3:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 
-.cards-container p{
-    font-size: 20px;
-    font-family: "coco gothic";
-    margin: 10px;
-    text-align: center;
+.cards-container p {
+  font-size: 20px;
+  font-family: "coco gothic";
+  margin: 10px;
+  text-align: center;
 }
