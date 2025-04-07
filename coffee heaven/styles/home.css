@@ -19,7 +19,11 @@ hero h2 {
 hero h3 {
   font-size: 25px;
   font-family: "coco gothic";
-  margin-top: 110px;
+}
+.overlay{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
 }
 hero button {
   background-color: #f0f0f0;
@@ -30,16 +34,17 @@ hero button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  margin-top: 80px;
-  transition: all 0.3s ease;
-  
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 50px;;
 }
 
 hero button:hover {
-    background-color: #e0ad6e;
-    color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e0ad6e;
+  color: white;
+  transform: translateY(-5px) translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 hero img {
@@ -52,82 +57,81 @@ hero img {
   z-index: -1;
 }
 
-.facts{
-    background: color #f4e9e1;;
-    color: #080808;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 2rem;
+.facts {
+  background: color #f4e9e1;
+  color: #080808;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 2rem;
 }
-section img{
-    width: 23%;
-    height: auto;
-    border-radius: 20px;
-    position: absolute;
-    right: 60px;
-    bottom: 120px;
+section img {
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  right: 80px;
+  bottom: 120px;
 }
 section img:hover {
-  filter: blur(2px);
-  transition: filter 0.3s ease;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-section h2{
-    font-family: "catchy mager";
-    font-size: clamp(32px, 4vw, 45px);
-    position: absolute;
-    top: 80px;
-    left: 50px;
+section h2 {
+  font-family: "catchy mager";
+  font-size: clamp(32px, 4vw, 45px);
+  position: absolute;
+  top: 100px;
+  left: 50px;
 }
-section ul{
-    font-family: "coco gothic";
-    font-size: clamp(14px, 1.5vw, 16px);
-    position: absolute;
-    top: 190px;
-    left: 50px;
-    list-style: inside;
-    line-height: 2;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 2rem;
-    border-radius: 15px;
+section ul {
+  font-family: "coco gothic";
+  font-size: clamp(14px, 1.5vw, 16px);
+  position: absolute;
+  top: 210px;
+  left: 50px;
+  list-style: inside;
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  border-radius: 15px;
 }
-section ul:hover{
-    transform: translate(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+section ul:hover {
+  transform: translate(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
 }
-section button{
-    background-color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    position: absolute;
-    bottom: 50px;    
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease;
+section button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-section button:hover{
-    background-color: #e0ad6e;
-    color: white;
-    transform: translateX(-50%) translateY(-5px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+section button:hover {
+  background-color: #e0ad6e;
+  color: white;
+  transform: translateX(-50%) translateY(-5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #daceae;
-    color: #f0f0f0;
-    width: 98%;
-    height: 50px;
-    position: relative;
-    border-radius: 8px;
-    left: 1%;
-    right: 1%;
-    bottom: 5px;
-    margin-top: 50px;
-    
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #daceae;
+  color: #f0f0f0;
+  width: 98%;
+  height: 50px;
+  position: relative;
+  border-radius: 8px;
+  left: 1%;
+  right: 1%;
+  bottom: 5px;
+  margin-top: 50px;
 }
